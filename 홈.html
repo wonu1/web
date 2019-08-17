@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <style>
     a {
-      color:green;
+      color:black;
       text-decoration: none;
       }
     a:hover{
@@ -29,40 +29,85 @@
       margin:0;
       padding: 25px;
     }
+    #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 30px;
+    }
+    #article{
+      padding-left: 30px;
+    }
+    body{
+      margin: 0;
+    }
+    #first{
+      margin: 30px;
+      margin-bottom: 0;
+    }
+    #iframe{
+      margin:0;
+    }
+    #text{
+      border: black 3px double;
+      height: 100px;
+      width: 310px;
+      margin: 20px;
+      font-size: 24px;
+      padding: 7px;
+    }
+    #bb{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
   </style>
   </head>
 
   <body>
       <h1><a href="홈.html">wonu's web</a></h1>
-      <ol>
-        <li><a href="1.html">html</a></li>
-        <li><a href="2.html">css</a></li>
-        <li><a href="3.html">javascript</a></li>
-      </ol>
-      <a href="https://www.youtube.com/">유튜브</a>&#160;&#160;&#160;<a href="https://logins.daum.net/accounts/signinform.do?url=https%3A%2F%2Fwww.daum.net%2F">다음 로그인</a>
-      &#160;&#160;&#160;<a href="https://github.com">github</a>&#160;&#160;&#160;<a href="https://www.w3schools.com/tags/tag_hn.asp">w3schools</a>
-      &#160;&#160;&#160; <a href="https://www.youtube.com/user/egoing2/playlists?disable_polymer=1">생활 코딩</a>
-      <p>
-       <iframe width="4px" height="4px" src="https://www.youtube.com/embed/BKHmm9sO6eo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </p>
+      <div id="grid">
+        <ol>
+          <li><a href="1.html">html</a></li>
+          <li><a href="2.html">css</a></li>
+          <li><a href="3.html">javascript</a></li>
+        </ol>
+          <div id="article">
+            <div id="bb">
+              <div><strong>
+              <div id="first"><a href="https://www.youtube.com/">유튜브</a>&#160;&#160;&#160;<a href="https://logins.daum.net/accounts/signinform.do?url=https%3A%2F%2Fwww.daum.net%2F">다음 로그인</a>
+              &#160;&#160;&#160;<a href="https://github.com">github</a>&#160;&#160;&#160;<a href="https://www.w3schools.com/tags/tag_hn.asp">w3schools</a>
+              &#160;&#160;&#160; <a href="https://www.youtube.com/user/egoing2/playlists?disable_polymer=1">생활 코딩</a>
+            </div></strong>
+            <div id="iframe">
+              <iframe width="7" height="7" src="https://www.youtube.com/embed/3aY1Z15vTw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div id=text><strong><s>
+            디자인적 재능이 없어서 왭 만들기를 포기하고 c언어<br>공부로 넘어가 사라질 왭ㅋ
+            </div></strong></s>
+          </div>
 
 
-            <h2>web</h2>
-      정상&#160; <strong>스트롱</strong> &#160;<u>유</u>
-      <table style="width:100%">
-        <tr>
-          <caption>표 그리기</caption>
-        </tr>
-        <tr>
-          <th>a</th><td>1</td><td>2</td><td rowspan="2"style="text-align:center">c</td>
-        </tr>
-        <tr>
-          <th>b</th><td>3</td><td>4</td>
-        </tr>
-      </table>
-      <p><strong>문단 나누기 실험용</strong> 1990년에 발표된 월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터를 이용해 사람들과 정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다. HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를 웹 브라우저라는 특정한 프로그램으로 읽을 수 있게 하도록 구성되어 있다. WWW, W3, 또는 간단하게 웹(Web)이라고도 한다. 일반인에게 인터넷이 보급되기 시작한 1994년부터 사실상 인터넷과 동의어 취급할 정도로 가장 널리 보급된 인터넷 시스템이다. 일반인들에게 인터넷 한다는 게 뭐냐고 물어보면 대다수는 웹 브라우저 켜고 웹 서핑하는 것이라고 대답할 것이다.
-      발표 이래로 계속적으로 HTML 자체의 기능을 추가하고, CSS로 더 나아진 디자인을 지원하게 만들며 JavaScript로 정적인 웹 페이지가 아닌 동적인 웹 페이지를 만들고 본격적인 수준의 프로그래밍을 가능하게 하는 등 많은 개선을 거쳐오고 있으며, 또한 jQuery를 위시한 수많은 자바스크립트 기반 라이브러리들과 PHP, ASP, JSP, CGI, Node.js, Django, Ruby on Rails 등 다양한 서버사이드 프레임워크의 등장에 힘입어 2015년 현재 들어서는 거의 모든 다른 인터넷 시스템의 기능들을 흡수하면서 또 다른 소프트웨어 플랫폼으로서의 지위를 누리고 있다. 2017년 현재 최신 표준은 HTML5, CSS3, ECMAScript 7이며. 웹 브라우저별 표준 준수 여부를 Acid 테스트에서 확인할 수 있다.
-      그리고 약어로 말하는 것이 원래 말보다 긴 몇 안 되는 단어 중 하나다. 영어로 '월드-와이드-웹'은 3음절이지만, '더블-유-더블-유-더블-유'는 6음절이다. 따따따 라고도 한다<a href="https://namu.wiki/w/%EC%9B%94%EB%93%9C%20%EC%99%80%EC%9D%B4%EB%93%9C%20%EC%9B%B9?from=World%20Wide%20Web" title="나무위키web">web</a><p/>
-      <img src="t.jpg" width="100%">
+
+                <h2>web</h2>
+          정상&#160; <strong>스트롱</strong> &#160;<u>유</u>
+          <table style="width:100%">
+            <tr>
+              <caption>표 그리기</caption>
+            </tr>
+            <tr>
+              <th>a</th><td>1</td><td>2</td><td rowspan="2"style="text-align:center">c</td>
+            </tr>
+            <tr>
+              <th>b</th><td>3</td><td>4</td>
+            </tr>
+          </table>
+          <p><strong>문단 나누기 실험용</strong> 1990년에 발표된 월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터를 이용해 사람들과 정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다. HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를 웹 브라우저라는 특정한 프로그램으로 읽을 수 있게 하도록 구성되어 있다. WWW, W3, 또는 간단하게 웹(Web)이라고도 한다. 일반인에게 인터넷이 보급되기 시작한 1994년부터 사실상 인터넷과 동의어 취급할 정도로 가장 널리 보급된 인터넷 시스템이다. 일반인들에게 인터넷 한다는 게 뭐냐고 물어보면 대다수는 웹 브라우저 켜고 웹 서핑하는 것이라고 대답할 것이다.
+          발표 이래로 계속적으로 HTML 자체의 기능을 추가하고, CSS로 더 나아진 디자인을 지원하게 만들며 JavaScript로 정적인 웹 페이지가 아닌 동적인 웹 페이지를 만들고 본격적인 수준의 프로그래밍을 가능하게 하는 등 많은 개선을 거쳐오고 있으며, 또한 jQuery를 위시한 수많은 자바스크립트 기반 라이브러리들과 PHP, ASP, JSP, CGI, Node.js, Django, Ruby on Rails 등 다양한 서버사이드 프레임워크의 등장에 힘입어 2015년 현재 들어서는 거의 모든 다른 인터넷 시스템의 기능들을 흡수하면서 또 다른 소프트웨어 플랫폼으로서의 지위를 누리고 있다. 2017년 현재 최신 표준은 HTML5, CSS3, ECMAScript 7이며. 웹 브라우저별 표준 준수 여부를 Acid 테스트에서 확인할 수 있다.
+          그리고 약어로 말하는 것이 원래 말보다 긴 몇 안 되는 단어 중 하나다. 영어로 '월드-와이드-웹'은 3음절이지만, '더블-유-더블-유-더블-유'는 6음절이다. 따따따 라고도 한다<a href="https://namu.wiki/w/%EC%9B%94%EB%93%9C%20%EC%99%80%EC%9D%B4%EB%93%9C%20%EC%9B%B9?from=World%20Wide%20Web" title="나무위키web">web</a><p/>
+          <img src="t.jpg" width="100%">
+          </div>
+        </div>
     </body>
 </html>
